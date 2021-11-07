@@ -7,17 +7,17 @@ function getSelectedCheckboxValues(name) {
     return values;
 }
 
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', (event) => {
-    let content = alert(getSelectedCheckboxValues('class'));
-    content = getSelectedCheckboxValues('class');
-    alert(content);
-    const fs = require('fs');
-    fs.writeFile('test.txt', content, err => {
-        if(err)
-        {
-            console.err;
-            return;
-        }
+function writeToFile() {
+    const btn = document.querySelector('#btn');
+    btn.addEventListener('click', (event) => {
+        let content = alert(getSelectedCheckboxValues('class'));
+        content = getSelectedCheckboxValues('class');
+        const fs = require('fs');
+        fs.writeFile('test.txt', content, err => {
+            if (err) {
+                console.err;
+                return;
+            }
+        });
     });
-});
+}
