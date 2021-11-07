@@ -11,7 +11,7 @@ function sendText() {
     .create({
       to: '+19132656747',
       from: '+19139149044',
-      body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+      body: 'Thank you for creating an account with us!',
     })
     .then(message => console.log(message.sid));
 }
