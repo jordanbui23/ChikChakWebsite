@@ -17,6 +17,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function writeToFile() {
+
+      let fso = CreateObject("Scripting.FileSystemObject");
+      let s = fso.CreateTextFile("test.txt");
+
+      var firstName = document.getElementById('firstName');
+      var lastName = document.getElementById('lastName');
+
+      s.writeline("First Name :" + firstName);
+      s.writeline("Last Name :" + lastName);
+
+      s.writeline("-----------------------------");
+      s.Close();
+    }
+  </script>
 
   <!--Favicon Image-->
   <link rel="icon" type="icon" href="assets/images/ChikChakFavicon.ico" />
@@ -25,6 +41,17 @@
   <meta name="description" content="Home Page">
 </head>
 
+<body>
+  <form onsubmit="javascript:writeToFile()">
+    <label>Type your first name:</label>
+    <input type="text" name="firstName" id="firstName" size="20">
+
+    <label>Type your last name: </label>
+    <input type="text" name="lastName" id="lastName" size="20">
+
+    <input type="submit" value="Update">
+  </form>
+</body>
 
 <body>
   <section id="classes">
