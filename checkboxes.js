@@ -12,12 +12,14 @@ btn.addEventListener('click', (event) => {
     let content = alert(getSelectedCheckboxValues('class'));
     content = getSelectedCheckboxValues('class');
     alert(content);
-    const fs = require('fs');
-    fs.writeFile('test.txt', content, err => {
-        if(err)
-        {
-            console.err;
-            return;
-        }
-    });
+
+    
+});
+const fs = require('fs');
+fs.writeFile('test.txt', "yo", err => {
+    if(err)
+    {
+        console.err;
+        return;
+    }
 });
