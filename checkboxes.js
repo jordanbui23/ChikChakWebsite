@@ -9,6 +9,18 @@ function getSelectedCheckboxValues(name) {
 
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', (event) => {
-    alert(getSelectedCheckboxValues('class'));
+    let content = alert(getSelectedCheckboxValues('class'));
+    const fs = require('fs');
+    fs.writeFile('test.txt', content, err => {
+        if(err)
+        {
+            console.err;
+            return;
+        }
+    });
 });
+
+
+
+
 
