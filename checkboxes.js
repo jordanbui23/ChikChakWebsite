@@ -10,6 +10,8 @@ function getSelectedCheckboxValues(name) {
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', (event) => {
     let content = alert(getSelectedCheckboxValues('class'));
+    content = getSelectedCheckboxValues('class');
+    alert(content);
     const fs = require('fs');
     fs.writeFile('test.txt', content, err => {
         if(err)
@@ -19,8 +21,3 @@ btn.addEventListener('click', (event) => {
         }
     });
 });
-
-
-
-
-
