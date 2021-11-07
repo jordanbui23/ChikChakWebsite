@@ -26,13 +26,42 @@
 </head>
 
 <body>
-</body>
+  <header>
+    <!--Navigation Bar for navigating the page-->
+    <nav class="navbar navbar-expand-md" style="background: linear-gradient(300deg, #3bbea6c5, 50%, #74e9d3)">
+      <a class="navbar-brand" style="color: black;">Chik Chak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<body>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: black;" href="classSelection.html">Select More Classes!</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Developers
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://www.linkedin.com/in/jordan-bui23" target="_blank"><i class="bi bi-person-circle"></i>Jordan Bui</a>
+              <a class="dropdown-item" href="https://ksu.joinhandshake.com/users/25825666?ref=students" target="_blank"><i class="bi bi-person-circle"></i>John Schaefer</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/spencer-montag-1ab242225/" target="_blank"><i class="bi bi-person-circle"></i>Spencer Montag</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/phillip-disidore-668333221/"><i class="bi bi-person-circle"></i>Phil Disidore</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--Notes-->
   <section id="classes">
     <div class="container">
       <div class="title">
-        <h1 class= "text-center">COURSE NOTES:</h1>
+        <h1 class="text-center">COURSE NOTES:</h1>
       </div>
       <div class="row">
         <div class="card border-dark col-md-15" style="max-width: 100rem;">
@@ -61,7 +90,7 @@
                 <div class="card-body">
                   <h1 class="card-title text-center">CIS 018 Notes:</h1>
                   <form onsubmit="download(this['name'].value, this['text'].value)">
-    
+
                     <textarea rows=3 cols=100
                       name="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </textarea>
                     <input type="text" name="name" value="018notes.txt">
@@ -80,7 +109,7 @@
                     <div class="card-body">
                       <h1 class="card-title text-center">CIS 115 Notes:</h1>
                       <form onsubmit="download(this['name'].value, this['text'].value)">
-        
+
                         <textarea rows=3 cols=100
                           name="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </textarea>
                         <input type="text" name="name" value="115notes.txt">
@@ -99,7 +128,7 @@
                         <div class="card-body">
                           <h1 class="card-title text-center">CIS 200 Notes:</h1>
                           <form onsubmit="download(this['name'].value, this['text'].value)">
-            
+
                             <textarea rows=3 cols=100
                               name="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </textarea>
                             <input type="text" name="name" value="200notes.txt">
@@ -118,7 +147,7 @@
                             <div class="card-body">
                               <h1 class="card-title text-center">CIS 300 Notes:</h1>
                               <form onsubmit="download(this['name'].value, this['text'].value)">
-                
+
                                 <textarea rows=3 cols=100
                                   name="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </textarea>
                                 <input type="text" name="name" value="300notes.txt">
@@ -137,7 +166,7 @@
                                 <div class="card-body">
                                   <h1 class="card-title text-center">CIS 301 Notes:</h1>
                                   <form onsubmit="download(this['name'].value, this['text'].value)">
-                    
+
                                     <textarea rows=3 cols=100
                                       name="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </textarea>
                                     <input type="text" name="name" value="301notes.txt">
