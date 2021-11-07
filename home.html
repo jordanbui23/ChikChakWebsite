@@ -17,6 +17,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script language="Javascript">
+    function download(filename, text) {
+      var pom = document.createElement('a');
+      pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+
+        encodeURIComponent(text));
+      pom.setAttribute('download', filename);
+
+      pom.style.display = 'none';
+      document.body.appendChild(pom);
+
+      pom.click();
+
+      document.body.removeChild(pom);
+    }
+  </script>
 
   <!--Favicon Image-->
   <link rel="icon" type="icon" href="assets/images/ChikChakFavicon.ico" />
@@ -46,10 +62,14 @@
               Developers
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="https://www.linkedin.com/in/jordan-bui23" target="_blank"><i class="bi bi-person-circle"></i>Jordan Bui</a>
-              <a class="dropdown-item" href="https://ksu.joinhandshake.com/users/25825666?ref=students" target="_blank"><i class="bi bi-person-circle"></i>John Schaefer</a>
-              <a class="dropdown-item" href="https://www.linkedin.com/in/spencer-montag-1ab242225/" target="_blank"><i class="bi bi-person-circle"></i>Spencer Montag</a>
-              <a class="dropdown-item" href="https://www.linkedin.com/in/phillip-disidore-668333221/"><i class="bi bi-person-circle"></i>Phil Disidore</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/jordan-bui23" target="_blank"><i
+                  class="bi bi-person-circle"></i>Jordan Bui</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/john-schaefer-982227200/"
+                target="_blank"><i class="bi bi-person-circle"></i>John Schaefer</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/spencer-montag-1ab242225/" target="_blank"><i
+                  class="bi bi-person-circle"></i>Spencer Montag</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/phillip-disidore-668333221/"><i
+                  class="bi bi-person-circle"></i>Phil Disidore</a>
             </div>
           </li>
         </ul>
